@@ -53,15 +53,8 @@ public class UtilCompareJarFiles {
 	    utilCompareJarFiles.writeNewLine("Program successfully executed \n", fileOutputStream);
 	    fileOutputStream.close();
 	}
-	catch (IOException ioe) {
-	    String exceptionOriginalMessage = ioe.getMessage();
-	    String exceptionPersonalizedMessage = "An error occured during initialization of app parameters : ";
-	    System.out.println("UtilCompareJarFiles.main("+args+") EXCEPTION : "
-		    + exceptionPersonalizedMessage + " : " + exceptionOriginalMessage);
-	    return;
-	}
-	catch (SecurityException se) {
-	    String exceptionOriginalMessage = se.getMessage();
+	catch (IOException | SecurityException e) {
+	    String exceptionOriginalMessage = e.getMessage();
 	    String exceptionPersonalizedMessage = "An error occured during initialization of app parameters : ";
 	    System.out.println("UtilCompareJarFiles.main("+args+") EXCEPTION : "
 		    + exceptionPersonalizedMessage + " : " + exceptionOriginalMessage);
