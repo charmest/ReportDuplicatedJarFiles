@@ -1,4 +1,4 @@
-package as.ep.outils;
+package com.charmest.reportDuplicatedJarFiles;
 
 import java.io.File;
 import java.io.FilenameFilter;
