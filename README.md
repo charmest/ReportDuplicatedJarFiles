@@ -1,5 +1,5 @@
 # ReportDuplicatedJarFiles
-A java developed tool which helps to find the potential same librairies but with differrent versions in a given folder.
+A java developed tool which helps to find the potential same librairies but with different versions within a given folder.
 
 How to proceed :
 
